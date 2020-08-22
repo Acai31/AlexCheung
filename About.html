@@ -34,6 +34,15 @@
         .topnav .icon {
           display: none;
         }
+        .imgbox {
+            display: grid;
+            height: 70%
+        }
+        .center-fit {
+            max-width: 70%;
+            max-height: 70vh;
+            margin: auto;
+        }
         </style>
         </head>
         
@@ -48,4 +57,6 @@
 
         <p>Hello! My name's Alex Cheung and I am a student, learner, and a milk tea bobaisseur.</p>
         <p>I am from the Bay Area, born and raised :)</p>
-        <img src="Golden Gate Bridge.JPG" alt = "Golden Gate Bridge" style="width:1024px; heigh:768px;">
+        <div class="imgbox">
+            <img class = "center-fit" src="Golden Gate Bridge.JPG" alt = "Golden Gate Bridge">
+        </div>
