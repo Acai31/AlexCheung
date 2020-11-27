@@ -48,10 +48,10 @@
           height: 100%;
           width: 50%;
           position: fixed;
-          z-index:1;
+          z-index: 1;
           top: 0;
           overflow-x: hidden;
-          padding-top: 20px;
+          /* padding-top: 20px; */
         }
         .left {
           left: 0; 
@@ -59,15 +59,24 @@
         .right {
           right: 0;
         }
-        .half_centered {
+        .half_centered_left {
+          position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center;
         }
-        .half_centered img {
-          width: 150px;
-          border-radius: 50%;
+        .half_centered_right {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+        img {
+          max-width: 100%;
+          height: auto;
+          width: auto\9;
         }
 
         </style>
@@ -90,17 +99,17 @@
 
         --> 
         <div class = "split left">
-          <div class="half_centered">
-            <h2 title="weird flex but ok" style="font-size:20px">Typing</h2>
+          <div class="half_centered_left">
+            <h3 title="weird flex but ok">Typing</h3>
+            <a href="https://data.typeracer.com/pit/profile?user=darkex&ref=badge" target="_blank"><img src="https://data.typeracer.com/misc/badge?user=darkex" style="border-radius: 10%;" alt="TypeRacer.com scorecard for user darkex"/></a> 
             <p>Here is my Typeracer profile</p>
-            <a href="https://data.typeracer.com/pit/profile?user=darkex&ref=badge" target="_blank"><img src="https://data.typeracer.com/misc/badge?user=darkex" border="0" alt="TypeRacer.com scorecard for user darkex"/></a> 
           </div>
         </div>
 
         <div class="split right">
-          <div class="half_centered">
-            <img src="Reddit_Avatar.png" alt="Avatar man">
-            <h2>My Reddit Avatar</h2>
-            <p>Extra text goes here</p>
+          <div class="half_centered_right">
+            <h3>Reddit</h3>
+            <img src="Reddit_Avatar.png" style="border-radius: 50%;" alt="Avatar man">
+            <p>My Reddit Avatar</p>
           </div>
         </div>
